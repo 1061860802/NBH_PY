@@ -1586,4 +1586,5 @@ def main_func(argv:list[str]):
 
 if __name__ == "__main__":
     in_argvs:list[str] = [sys.argv[0],r"D:\cpp\OpenTest",r"build"] if len(sys.argv) < 2 else sys.argv
+    #Change D:\cpp\OpenTest to your project,change build  to your cmd
     main_func(in_argvs)
