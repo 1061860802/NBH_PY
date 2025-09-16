@@ -1,0 +1,65 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "debug",
+      "displayName": "Debug Build",
+      "description": "Builds the project in Debug mode.",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "ACTIVATED_KEYS": "InstallAlways;Shoping;Release;Debug",
+        "COMPILE_OPTIONS": "",
+        "LINK_OPTIONS": "",
+        "MODE_PATH": "",
+        "MODE_MACROS": ""
+      }
+    },
+    {
+      "name": "development",
+      "displayName": "Development Build",
+      "description": "Builds the project in Development mode.",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/development",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo",
+        "ACTIVATED_KEYS": "InstallAlways;Shoping;Release",
+        "COMPILE_OPTIONS": "",
+        "LINK_OPTIONS": "",
+        "MODE_PATH": "",
+        "MODE_MACROS": ""
+      }
+    },
+    {
+      "name": "release",
+      "displayName": "Release Build",
+      "description": "Builds the project in Release mode.",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "ACTIVATED_KEYS": "InstallAlways;Shoping",
+        "COMPILE_OPTIONS": "",
+        "LINK_OPTIONS": "",
+        "MODE_PATH": "Release",
+        "MODE_MACROS": ""
+      }
+    },
+    {
+      "name": "mini",
+      "displayName": "Mini Build",
+      "description": "Builds the project in Mini mode.",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/mini",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "MinSizeRel",
+        "ACTIVATED_KEYS": "InstallAlways;Shoping",
+        "COMPILE_OPTIONS": "",
+        "LINK_OPTIONS": "",
+        "MODE_PATH": "Mini",
+        "MODE_MACROS": ""
+      }
+    }
+  ]
+}
